@@ -30,11 +30,23 @@ const CropsSchema = new Schema(
 			type: Number,
 			required: true,
 		},
+		
+		min: {
+			type: String,
+			required: true,
+		},
+		
+		max: {
+			type: String,
+			required: true,
+		},
 
 		status: {
 			type: Boolean,
 			default: true,
 		},
+		
+		
 		createdAt: {
 			type: Date,
 			default: Date.now,
